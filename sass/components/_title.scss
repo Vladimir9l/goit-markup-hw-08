@@ -1,0 +1,82 @@
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  @include font(700, 28px, 1.178, 0.03em);
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 36px, 1.167, 0.03em);
+    margin-bottom: 50px;
+  }
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 12px;
+  @include font(700, 20px, 1.15, 0.03em);
+}
+
+@media screen and (max-width: 1199px) {
+  .form-title {
+    @include font(700, 20px, 1.5, 0.03em);
+  }
+}
+
+.hero-title {
+  text-align: center;
+
+  @include font(900, 44px, 1.364, 0.06em);
+  text-transform: uppercase;
+  color: #ffffff;
+
+  @media screen and (max-width: 1199px) {
+    @include font(900, 26px, 1.615, 0.06em);
+  }
+}
+
+.features-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  @include font(700, 14px, 1.143, 0.03em);
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.whatwedo-title {
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 370px;
+  text-align: center;
+
+  @include font(700, 14px, 1.143, 0.03em);
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.project-title {
+  margin-bottom: 4px;
+
+  @include font(700, 18px, 2, 0.06em);
+  color: #212121;
+}
+
+.footer-title {
+  padding-top: 5px;
+  margin-bottom: 20px;
+
+  @include font(700, 14px, 1.143, 0.03em);
+  text-transform: uppercase;
+  color: #ffffff;
+}
