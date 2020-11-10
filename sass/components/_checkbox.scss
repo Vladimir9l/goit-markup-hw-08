@@ -5,13 +5,13 @@
 }
 .checkbox-label {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color:  #757575;
 
   @media screen and (max-width: 1199px) {
     font-size: 12px;
@@ -26,17 +26,17 @@
 }
 
 .checkbox-custom-box {
-  display: inline-flex;
   width: 1em;
   height: 1em;
-  background-image: url(../images/Vector.svg);
+  background-image: url(../images/icon-check-off.svg);
   fill: #212121;
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
+  margin-right: 8px;
 
   .checkbox-input:checked + & {
-    background-image: url(../images/icon-check.svg);
+    background-image: url(../images/icon-check-on.svg);
     background-size: contain;
     cursor: pointer;
     background-repeat: no-repeat;
@@ -47,8 +47,4 @@
     border: 1px solid #2196f3;
     border-radius: 4px;
   }
-}
-
-.check-text {
-  display: inline-flex;
 }

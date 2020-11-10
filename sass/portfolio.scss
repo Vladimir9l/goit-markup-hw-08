@@ -1,16 +1,15 @@
 //base
-@import "./base/common";
-@import "./base/container";
+@import './base/common';
+@import './base/container';
 //components
-@import "./components/logo";
-@import "./components/mobile-menu";
-@import "./components/project-filter";
-@import "./components/title";
-@import "./components/social-links";
-@import "./components/footer-form";
-@import "./components/footer-submit-btn";
-
+@import './components/logo';
+@import './components/mobile-menu';
+@import './components/project-filter';
+@import './components/title';
+@import './components/social-links';
+@import './components/footer-form';
+@import './components/footer-submit-btn';
 // layout
-@import "./layout/header";
-@import "./layout/projects";
-@import "./layout/footer";
+@import './layout/header';
+@import './layout/project-gallery';
+@import './layout/footer';
